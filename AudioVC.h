@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>   //AVaudio library
 
-@interface AudioVC : UIViewController
+@interface AudioVC : UIViewController<UIAlertViewDelegate>
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;  //OBJECT OF TYPE AVAUDIOPLAYER
 
+// Public methods
+- (void)initPlayer:(NSString*) audioFile fileExtension:(NSString*)fileExtension;
+- (void)playAudio;
+- (void)pauseAudio;
+- (void)setCurrentAudioTime:(float)value;
+- (float)getAudioDuration;
+- (NSString*)timeFormat:(float)value;
+- (NSTimeInterval)getCurrentAudioTime;
+- (IBAction)speakerOnOff;
+- (IBAction)myAlert;
 @end

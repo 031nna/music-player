@@ -14,19 +14,12 @@
 
 @implementation SettingsVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+     self.audioPlayer2 = [[AudioVC alloc]init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +38,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)btnMuteSound2:(id)sender {
+    [self.audioPlayer2 speakerOnOff];
+}
+
 
 @end

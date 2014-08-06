@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AudioVC.h"
 
 @interface SettingsVC : UIViewController
+
+@property(nonatomic,strong)AudioVC * audioPlayer2;
+
+- (IBAction)btnMuteSound2:(id)sender;
 
 @end
