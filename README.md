@@ -1,3 +1,3 @@
-**Simple ## iOs Music ## app 
+**Simple iOs Music app 
 **
-Written in **Objective C**
+Written in **Objective-C**
